@@ -69,6 +69,7 @@ std::string ReplaceAll(std::string str, const std::string& from, const std::stri
     return str;
 }
 
+#if 0
 std::ostream& operator<<(std::ostream& os, const TCollection_ExtendedString& extstr)
 {
 	static char str[2048];
@@ -80,6 +81,7 @@ std::ostream& operator<<(std::ostream& os, const TCollection_ExtendedString& ext
 
 	return (os << res);
 }
+#endif
 
 std::ostream& operator<<(std::ostream& os, const Jt_GUID& extstr)
 {

@@ -418,7 +418,7 @@ Handle(JtData_Object) JtData_Model::readSegmentDump(std::ifstream& theFile,
     std::cout << "\n Raw PMI dump:\n";
     for (int i = 0; i < aSize; i++) {
         aDataReaderPtr->ReadPrimitiveValue(theValue);
-        if(__isascii(theValue) != 0)
+        if(isascii(theValue) != 0)
             std::cout << '.';
         else
             std::cout << (char)theValue;

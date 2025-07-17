@@ -17,11 +17,12 @@
 #ifndef _JtData_ByteSwap_HeaderFile
 #define _JtData_ByteSwap_HeaderFile
 
-#ifdef __GNUC__
+#ifdef __clang__
+inline void ByteSwap (uint16_t theSrc, uint16_t& theDst) { theDst = __builtin_bswap16 (theSrc); }
+inline void ByteSwap (uint32_t theSrc, uint32_t& theDst) { theDst = __builtin_bswap32 (theSrc); }
+inline void ByteSwap (uint64_t theSrc, uint64_t& theDst) { theDst = __builtin_bswap64 (theSrc); }
+#elif  __GNUC__
 #include <byteswap.h>
-#endif
-
-#ifdef __GNUC__
 
 inline void ByteSwap (uint16_t theSrc, uint16_t& theDst) { theDst = (theSrc >> 8) | (theSrc << 8); }
 
