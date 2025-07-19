@@ -1,0 +1,4 @@
+PyOpenJt provides CMake targets:
+
+find_package(TKJT CONFIG REQUIRED)
+target_link_libraries(TKJT PRIVATE TKJT)
