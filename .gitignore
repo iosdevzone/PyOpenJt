@@ -9,6 +9,7 @@ WinBuild/*
 #cmake
 /cmbuild/
 /build/
+/install/
 /build32/
 /build64/
 /release/

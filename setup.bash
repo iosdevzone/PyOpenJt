@@ -14,7 +14,8 @@ vcpkg install \
 
 mkdir -p build
 pushd build
-cmake .. -DCMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake
+cmake .. -DCMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake \
+	-DCMAKE_INSTALL_PREFIX=$PWD/../install
 pushd build
 make
 popd
