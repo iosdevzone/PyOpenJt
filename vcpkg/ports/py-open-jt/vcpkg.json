@@ -12,6 +12,17 @@
     {
       "name": "vcpkg-cmake-config",
       "host": true
-    }
+    },
+    "qt5-base",
+    "qt5-tools",
+    "eigen3",
+    "opencascade",
+    "tbb",
+    "cli11",
+    "tinygltf",
+    "liblzma",
+    "zlib",
+    "tinygltf",
+    "draco"
   ]
 }
